@@ -1,0 +1,19 @@
+.navbar {
+  background-color: var(--background-color);
+  height: 5rem;
+  position: fixed;
+}
+.navbar-list {
+  list-style: none;
+}
+.navbar-item {
+  align-content: center;
+}
+.navbar-link {
+  outline-style: none;
+  text-decoration: none;
+  color: var(--text-gray);
+}
+.space {
+  height: 5rem;
+}
