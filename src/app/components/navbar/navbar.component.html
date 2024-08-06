@@ -2,25 +2,25 @@
   <div class="py-4 menu-button">
     <button (click)="menu()">Menu</button>
   </div>
-  <div class="container text-center h-100 p-0">
-    <ul
-      class="navbar-list row row-cols-1 row-cols-md-5 g-md-1 p-0 py-md-4 m-0"
-      [ngClass]="menuVisible ? 'menu-visible' : ''"
-    >
-      <li class="navbar-item col">
-        <a class="navbar-link" href="#home">Home</a>
+  <div
+    class="container text-center h-100 p-0 menu-container"
+    [ngClass]="menuVisible ? 'menu-visible' : ''"
+  >
+    <ul class="navbar-list row row-cols-1 row-cols-md-5 g-md-1 p-0 py-md-4 m-0">
+      <li class="navbar-item col" routerLink="" fragment="home">
+        <span class="navbar-link">Home</span>
       </li>
-      <li class="navbar-item col">
-        <a class="navbar-link" href="#about">About</a>
+      <li class="navbar-item col" routerLink="" fragment="about">
+        <span class="navbar-link">About</span>
       </li>
-      <li class="navbar-item col">
-        <a class="navbar-link" href="#skills">Skills</a>
+      <li class="navbar-item col" routerLink="" fragment="skills">
+        <span class="navbar-link">Skills</span>
       </li>
-      <li class="navbar-item col">
-        <a class="navbar-link" href="#projects">Projects</a>
+      <li class="navbar-item col" routerLink="" fragment="projects">
+        <span class="navbar-link">Projects</span>
       </li>
-      <li class="navbar-item col">
-        <a class="navbar-link" href="#contact">Contact</a>
+      <li class="navbar-item col" routerLink="" fragment="contact">
+        <span class="navbar-link">Contact</span>
       </li>
     </ul>
   </div>

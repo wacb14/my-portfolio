@@ -9,12 +9,12 @@
 }
 .navbar-item {
   align-content: center;
+  cursor: pointer;
 }
 .navbar-link {
   outline-style: none;
   text-decoration: none;
   color: var(--secondary-color);
-  cursor: pointer;
 }
 .navbar-link:hover,
 .navbar-link:active {
@@ -25,18 +25,21 @@
 }
 
 @media (max-width: 768px) {
-  .navbar{
+  .navbar {
     height: 10vh;
   }
-  .navbar-list {
+  .menu-container {
     position: fixed;
     left: 0;
     height: 90vh;
     top: 10vh;
     background-color: var(--black-color);
-     width: 50%;
+    width: 50%;
     transform: translate(-100%);
     transition: transform 0.5s ease;
+  }
+  .navbar-list{
+    height: 100%;
   }
   .menu-button {
     display: block;
