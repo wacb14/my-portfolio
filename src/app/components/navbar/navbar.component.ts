@@ -8,7 +8,7 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class NavbarComponent implements OnInit {
   menuVisible = false;
-
+  activeFragment = 'home';
   constructor(
     private eRef: ElementRef,
     private activatedRoute: ActivatedRoute
@@ -18,7 +18,9 @@ export class NavbarComponent implements OnInit {
     this.activatedRoute.fragment.subscribe((fragment: string | null) => {
       if (fragment) {
         this.jumpToSection(fragment);
-        this.menu();
+        this.activeFragment = fragment;
+        console.log(this.activeFragment);
+        this.menuVisible = false;
       }
     });
   }
