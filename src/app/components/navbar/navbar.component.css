@@ -1,7 +1,8 @@
 .navbar {
-  background-color: var(--background-color);
-  height: 5rem;
-  position: fixed;
+  background-color: var(--black-color);
+  position: sticky;
+  top: 0;
+  left: 0;
 }
 .navbar-list {
   list-style: none;
@@ -12,8 +13,35 @@
 .navbar-link {
   outline-style: none;
   text-decoration: none;
-  color: var(--text-gray);
+  color: var(--secondary-color);
+  cursor: pointer;
 }
-.space {
-  height: 5rem;
+.navbar-link:hover,
+.navbar-link:active {
+  color: var(--primary-color);
+}
+.menu-button {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .navbar{
+    height: 10vh;
+  }
+  .navbar-list {
+    position: fixed;
+    left: 0;
+    height: 90vh;
+    top: 10vh;
+    background-color: var(--black-color);
+     width: 50%;
+    transform: translate(-100%);
+    transition: transform 0.5s ease;
+  }
+  .menu-button {
+    display: block;
+  }
+  .menu-visible {
+    transform: translate(0%);
+  }
 }

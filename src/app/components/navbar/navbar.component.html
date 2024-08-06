@@ -1,20 +1,27 @@
 <nav class="navbar w-100">
-  <div class="container text-center h-100">
-    <ul class="navbar-list row h-100 p-0">
-      <li class="navbar-item col"><a class="navbar-link" href="#here">Home</a></li>
+  <div class="py-4 menu-button">
+    <button (click)="menu()">Menu</button>
+  </div>
+  <div class="container text-center h-100 p-0">
+    <ul
+      class="navbar-list row row-cols-1 row-cols-md-5 g-md-1 p-0 py-md-4 m-0"
+      [ngClass]="menuVisible ? 'menu-visible' : ''"
+    >
       <li class="navbar-item col">
-        <a class="navbar-link" href="">About</a>
+        <a class="navbar-link" href="#home">Home</a>
       </li>
       <li class="navbar-item col">
-        <a class="navbar-link" href="">Skills</a>
+        <a class="navbar-link" href="#about">About</a>
       </li>
       <li class="navbar-item col">
-        <a class="navbar-link" href="">Projects</a>
+        <a class="navbar-link" href="#skills">Skills</a>
       </li>
       <li class="navbar-item col">
-        <a class="navbar-link" href="">Contact</a>
+        <a class="navbar-link" href="#projects">Projects</a>
+      </li>
+      <li class="navbar-item col">
+        <a class="navbar-link" href="#contact">Contact</a>
       </li>
     </ul>
   </div>
 </nav>
-<div class="space"></div>
