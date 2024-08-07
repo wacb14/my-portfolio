@@ -1,9 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 :root {
-  --black-color: #000000;
+  --black-color: #000000e0;
   --secondary-color: #bababa;
   --primary-color: #0881a5;
   --background-color: #0f1b24;
+  --photoMeasure: 20rem;
 }
 html {
   scroll-behavior: smooth;
@@ -21,4 +22,7 @@ body {
 }
 .w-100 {
   width: 100%;
+}
+.w-fit {
+  width: fit-content !important;
 }

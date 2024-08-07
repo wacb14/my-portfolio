@@ -1,0 +1,61 @@
+#photoContainer {
+  position: relative;
+  z-index: 1;
+}
+.profile-photo {
+  aspect-ratio: 1/1;
+  width: var(--photoMeasure);
+  height: var(--photoMeasure);
+  border-radius: 50%;
+}
+.text-primary {
+  color: var(--primary-color);
+}
+.photo-border {
+  position: relative;
+  border-radius: 50%;
+  z-index: auto;
+  width: var(--photoMeasure);
+  height: var(--photoMeasure);
+}
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.photo-border::after,
+.photo-border::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: conic-gradient(
+    from var(--angle),
+    transparent 50%,
+    var(--primary-color)
+  );
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: -1;
+  padding: 0.5rem;
+  border-radius: 50%;
+  animation: 15s spin linear infinite;
+}
+
+@keyframes spin {
+  from {
+    --angle: 0deg;
+  }
+
+  to {
+    --angle: 360deg;
+  }
+}
+
+.photo-border::before {
+  filter: blur(1.5em);
+  opacity: 0.7;
+}

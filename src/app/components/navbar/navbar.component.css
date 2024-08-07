@@ -1,8 +1,9 @@
 .navbar {
-  background-color: var(--black-color);
+  background: linear-gradient(black, var(--black-color));
   position: sticky;
   top: 0;
   left: 0;
+  z-index: 2;
 }
 .navbar-list {
   list-style: none;
@@ -49,7 +50,7 @@
     left: 0;
     height: 90vh;
     top: 10vh;
-    background-color: var(--black-color);
+    background: linear-gradient(to right, black, var(--black-color));
     width: 55%;
     transform: translate(-100%);
     transition: transform 0.5s ease;

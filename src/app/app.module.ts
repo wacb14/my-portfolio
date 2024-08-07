@@ -4,9 +4,10 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { AppRoutingModule } from './app-routing.module';
 import { MainPageComponent } from './components/main-page/main-page.component';
+import { HomePageComponent } from './components/home-page/home-page.component';
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, MainPageComponent],
+  declarations: [AppComponent, NavbarComponent, MainPageComponent, HomePageComponent],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],

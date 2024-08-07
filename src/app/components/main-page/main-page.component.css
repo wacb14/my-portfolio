@@ -1,0 +1,5 @@
+.background-page {
+  background-color: var(--background-color);
+  color: var(--secondary-color);
+  z-index: -2;
+}
