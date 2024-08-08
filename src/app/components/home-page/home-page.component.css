@@ -1,11 +1,17 @@
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
 #photoContainer {
   position: relative;
   z-index: 1;
 }
 .profile-photo {
   aspect-ratio: 1/1;
-  width: var(--photoMeasure);
-  height: var(--photoMeasure);
+  width: var(--photo-size);
+  height: var(--photo-size);
   border-radius: 50%;
 }
 .text-primary {
@@ -15,14 +21,8 @@
   position: relative;
   border-radius: 50%;
   z-index: auto;
-  width: var(--photoMeasure);
-  height: var(--photoMeasure);
-}
-
-@property --angle {
-  syntax: "<angle>";
-  initial-value: 0deg;
-  inherits: false;
+  width: var(--photo-size);
+  height: var(--photo-size);
 }
 
 .photo-border::after,
@@ -58,4 +58,59 @@
 .photo-border::before {
   filter: blur(1.5em);
   opacity: 0.7;
+}
+.btn-empty {
+  border: solid 0.2rem var(--secondary-color);
+  color: var(--secondary-color);
+  font-size: 1rem;
+  text-transform: uppercase;
+  background-color: transparent;
+  border-radius: 3rem;
+  padding: 1.25rem;
+  width: 14rem;
+}
+.btn-empty:hover {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+  cursor: pointer;
+}
+.btn-filled {
+  border: solid 0.2rem var(--primary-color);
+  color: var(--background-color);
+  font-size: 1rem;
+  text-transform: uppercase;
+  background-color: var(--primary-color);
+  border-radius: 3rem;
+  padding: 1.25rem;
+  width: 14rem;
+}
+.btn-filled:hover {
+  border-color: #0aa9da;
+  background-color: #0aa9da;
+  cursor: pointer;
+}
+.continuous-text {
+  display: inline-block;
+}
+.separator {
+  color: var(--primary-color);
+}
+@media (max-width: 992px) {
+  .hidden-md {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .virtue {
+    display: block;
+  }
+  .hidden-sm {
+    display: none;
+  }
+}
+@media (max-width: 576px) {
+  .photo-border,
+  .profile-photo {
+    --photo-size: 18rem;
+  }
 }

@@ -4,7 +4,7 @@
   --secondary-color: #bababa;
   --primary-color: #0881a5;
   --background-color: #0f1b24;
-  --photoMeasure: 20rem;
+  --photo-size: 20rem;
 }
 html {
   scroll-behavior: smooth;
