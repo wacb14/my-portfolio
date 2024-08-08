@@ -23,6 +23,9 @@ body {
 .w-100 {
   width: 100%;
 }
+.h-fit {
+  height: fit-content !important;
+}
 .w-fit {
   width: fit-content !important;
 }

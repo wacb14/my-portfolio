@@ -24,7 +24,6 @@
   width: var(--photo-size);
   height: var(--photo-size);
 }
-
 .photo-border::after,
 .photo-border::before {
   content: "";
@@ -94,6 +93,11 @@
 }
 .separator {
   color: var(--primary-color);
+}
+@media (min-width: 1200px) {
+  .complete {
+    height: 93vh;
+  }
 }
 @media (max-width: 992px) {
   .hidden-md {
