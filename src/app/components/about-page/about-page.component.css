@@ -1,0 +1,6 @@
+.card{
+    background-color: var(--primary-color);
+    border-radius: 1.25rem;
+    height: 10rem;
+    margin: 0;
+}

@@ -29,3 +29,13 @@ body {
 .w-fit {
   width: fit-content !important;
 }
+.text-main {
+  color: var(--primary-color);
+}
+
+@media (min-width: 1200px) {
+  .complete {
+    height: 93vh;
+    align-content: center;
+  }
+}

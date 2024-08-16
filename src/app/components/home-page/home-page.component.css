@@ -89,16 +89,12 @@
   cursor: pointer;
 }
 .continuous-text {
-  display: inline-block;
+  display: inline-block !important;
 }
 .separator {
   color: var(--primary-color);
 }
-@media (min-width: 1200px) {
-  .complete {
-    height: 93vh;
-  }
-}
+
 @media (max-width: 992px) {
   .hidden-md {
     display: none;

@@ -3,3 +3,6 @@
   color: var(--secondary-color);
   z-index: -2;
 }
+.horizontal-separator{
+  margin: 3rem 0;
+}
