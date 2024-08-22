@@ -89,7 +89,7 @@
   cursor: pointer;
 }
 .continuous-text {
-  display: inline-block !important;
+  display: inline-block;
 }
 .separator {
   color: var(--primary-color);
