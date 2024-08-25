@@ -7,7 +7,7 @@
         <div class="col-12 col-lg-5 p-0 text-center">
             <h3>Frontend</h3>
             <div class="row m-0 justify-content-center">
-                <div class="col col-lg-3 icon-container" *ngFor="let item of frontend; let i = index">
+                <div class="col-4 col-xl-3 icon-container" *ngFor="let item of frontend; let i = index">
                     <img class="visible-icon skill-icon" [src]="iconsPath + item.file">
                     <img class="hidden-icon skill-icon" [src]="iconsPath +'c_'+ item.file">
                     <h5>{{item.title}}</h5>
@@ -17,7 +17,7 @@
         <div class="col-12 col-lg-5 p-0 text-center">
             <h3>Backend</h3>
             <div class="row m-0 justify-content-center">
-                <div class="col col-lg-3 icon-container" *ngFor="let item of backend; let i = index">
+                <div class="col-4 col-xl-3 icon-container" *ngFor="let item of backend; let i = index">
                     <img class="visible-icon skill-icon" [src]="iconsPath + item.file">
                     <img class="hidden-icon skill-icon" [src]="iconsPath +'c_'+ item.file">
                     <h5>{{item.title}}</h5>
@@ -29,7 +29,7 @@
         <div class="col p-0 text-center">
             <h3>Others</h3>
             <div class="row m-0">
-                <div class="col col-lg-1 icon-container" *ngFor="let item of others; let i = index">
+                <div class="col-3 col-xl-1 icon-container" *ngFor="let item of others; let i = index">
                     <img class="visible-icon skill-icon" [src]="iconsPath + item.file">
                     <img class="hidden-icon skill-icon" [src]="iconsPath +'c_'+ item.file">
                     <h5>{{item.title}}</h5>
