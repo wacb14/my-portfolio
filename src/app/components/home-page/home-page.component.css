@@ -14,9 +14,6 @@
   height: var(--photo-size);
   border-radius: 50%;
 }
-.text-primary {
-  color: var(--primary-color);
-}
 .photo-border {
   position: relative;
   border-radius: 50%;
@@ -39,7 +36,7 @@
   left: 50%;
   translate: -50% -50%;
   z-index: -1;
-  padding: 0.5rem;
+  padding: 0.25rem;
   border-radius: 50%;
   animation: 15s spin linear infinite;
 }
@@ -58,7 +55,6 @@
   filter: blur(1.5em);
   opacity: 0.7;
 }
-
 .btn-link {
   border: solid 0.2rem var(--secondary-color);
   color: var(--secondary-color);
@@ -68,7 +64,7 @@
   padding: 1rem;
   width: 12rem;
   font-family: inherit;
-  display:inline-block;
+  display: inline-block;
   text-decoration: none;
 }
 .btn-link:hover {
