@@ -10,7 +10,15 @@ import { SkillsPageComponent } from './components/skills-page/skills-page.compon
 import { ProjectsPageComponent } from './components/projects-page/projects-page.component';
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, MainPageComponent, HomePageComponent, AboutPageComponent, SkillsPageComponent, ProjectsPageComponent],
+  declarations: [
+    AppComponent,
+    NavbarComponent,
+    MainPageComponent,
+    HomePageComponent,
+    AboutPageComponent,
+    SkillsPageComponent,
+    ProjectsPageComponent,
+  ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
