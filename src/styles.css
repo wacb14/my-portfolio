@@ -1,9 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 :root {
   --black-color: #000000e0;
+  --primary-color: #facc15;
   --secondary-color: #bababa;
-  --primary-color: #0881a5;
   --background-color: #0f1b24;
+  --alternative-background-color: #1f2937;
   --photo-size: 20rem;
 }
 html {
@@ -29,13 +30,13 @@ body {
 .w-fit {
   width: fit-content !important;
 }
-.text-main {
+.text-primary {
   color: var(--primary-color);
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
   .complete {
-    height: 93vh;
+    height: 95vh;
     align-content: center;
   }
 }

@@ -19,7 +19,6 @@ export class NavbarComponent implements OnInit {
       if (fragment) {
         this.jumpToSection(fragment);
         this.activeFragment = fragment;
-        console.log(this.activeFragment);
         this.menuVisible = false;
       }
     });

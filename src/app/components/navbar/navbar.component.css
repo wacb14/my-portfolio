@@ -7,6 +7,7 @@
 }
 .navbar-list {
   list-style: none;
+  justify-content: center;
 }
 .navbar-item {
   align-content: center;
@@ -17,12 +18,36 @@
   text-decoration: none;
   color: var(--secondary-color);
 }
-.navbar-link:hover,
+.navbar-item:hover .navbar-link,
 .navbar-link:active {
   color: var(--primary-color);
+  padding-bottom: 0.2rem;
 }
 .active-link {
   color: var(--primary-color);
+}
+.active-link .text-link::after {
+  width: 100%;
+}
+.text-link {
+  display: inline;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+.text-link::after {
+  content: "";
+  width: 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: block;
+  height: 0.2rem;
+  background-color: var(--primary-color);
+  border-radius: 0.35rem;
+  transition: width 0.3s linear;
+}
+.navbar-item:hover .text-link::after {
+  width: 100%;
 }
 .menu-hidden {
   display: none;

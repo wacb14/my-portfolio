@@ -14,9 +14,6 @@
   height: var(--photo-size);
   border-radius: 50%;
 }
-.text-primary {
-  color: var(--primary-color);
-}
 .photo-border {
   position: relative;
   border-radius: 50%;
@@ -39,7 +36,7 @@
   left: 50%;
   translate: -50% -50%;
   z-index: -1;
-  padding: 0.5rem;
+  padding: 0.25rem;
   border-radius: 50%;
   animation: 15s spin linear infinite;
 }
@@ -58,38 +55,25 @@
   filter: blur(1.5em);
   opacity: 0.7;
 }
-.btn-empty {
+.btn-link {
   border: solid 0.2rem var(--secondary-color);
   color: var(--secondary-color);
-  font-size: 1rem;
-  text-transform: uppercase;
-  background-color: transparent;
+  font-size: 1.35rem;
+  background-color: var(--alternative-background-color);
   border-radius: 3rem;
-  padding: 1.25rem;
-  width: 14rem;
+  padding: 1rem;
+  width: 12rem;
+  font-family: inherit;
+  display: inline-block;
+  text-decoration: none;
 }
-.btn-empty:hover {
+.btn-link:hover {
   border-color: var(--primary-color);
   color: var(--primary-color);
   cursor: pointer;
 }
-.btn-filled {
-  border: solid 0.2rem var(--primary-color);
-  color: var(--background-color);
-  font-size: 1rem;
-  text-transform: uppercase;
-  background-color: var(--primary-color);
-  border-radius: 3rem;
-  padding: 1.25rem;
-  width: 14rem;
-}
-.btn-filled:hover {
-  border-color: #0aa9da;
-  background-color: #0aa9da;
-  cursor: pointer;
-}
 .continuous-text {
-  display: inline-block !important;
+  display: inline-block;
 }
 .separator {
   color: var(--primary-color);
