@@ -34,9 +34,28 @@ body {
   color: var(--primary-color);
 }
 
+.hidden-icon {
+  display: none;
+}
+.icon-container:hover .visible-icon {
+  display: none;
+}
+.icon-container:hover .hidden-icon {
+  display: initial;
+}
+.icon-container > a{
+  display: flex;
+  align-items: center;
+}
+
 @media (min-width: 1400px) {
   .complete {
     height: 95vh;
     align-content: center;
+  }
+}
+@media (max-width: 576px) {
+  body {
+    font-size: 1.2rem;
   }
 }

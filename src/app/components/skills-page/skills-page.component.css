@@ -1,12 +1,3 @@
 .skill-icon {
-  height: 3.5rem;
-}
-.hidden-icon {
-  display: none;
-}
-.icon-container:hover .visible-icon {
-  display: none;
-}
-.icon-container:hover .hidden-icon {
-  display:initial;
+    height: 3.5rem;
 }
