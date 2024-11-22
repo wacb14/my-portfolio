@@ -1,28 +1,28 @@
 <nav class="navbar w-100">
   <div class="py-md-4 menu-hidden h-100">
-    <button (click)="menu()" class="btn-menu px-3 py-1 ms-3" [ngClass]="menuVisible ? 'btn-menu--active' : ''">
+    <button (click)="menu()" class="btn-menu px-3 py-1 ms-3" [class.btn-menu--active]="menuVisible">
       <i class="bi bi-list"></i>
     </button>
   </div>
-  <div class="container text-center h-100 p-0 menu-container" [ngClass]="menuVisible ? 'menu-visible' : ''">
+  <div class="container text-center h-100 p-0 menu-container" [class.menu-visible]="menuVisible">
     <ul class="navbar-list row row-cols-1 row-cols-md-5 g-md-1 p-0 py-md-4 m-0">
       <li class="navbar-item col" routerLink="" fragment="home">
-        <span class="navbar-link" [ngClass]="activeFragment == 'home' ? 'active-link' : ''">
+        <span class="navbar-link" [class.active-link]="activeFragment == 'home'">
           <p class="m-0 text-link">Home</p>
         </span>
       </li>
       <li class="navbar-item col" routerLink="" fragment="projects">
-        <span class="navbar-link" [ngClass]="activeFragment == 'projects' ? 'active-link' : ''">
+        <span class="navbar-link" [class.active-link]="activeFragment == 'projects'">
           <p class="m-0 text-link">Projects</p>
         </span>
       </li>
       <li class="navbar-item col" routerLink="" fragment="skills">
-        <span class="navbar-link" [ngClass]="activeFragment == 'skills' ? 'active-link' : ''">
+        <span class="navbar-link" [class.active-link]="activeFragment == 'skills'">
           <p class="m-0 text-link">Skills</p>
         </span>
       </li>
       <li class="navbar-item col" routerLink="" fragment="about">
-        <span class="navbar-link" [ngClass]="activeFragment == 'about' ? 'active-link' : ''">
+        <span class="navbar-link" [class.active-link]="activeFragment == 'about'">
           <p class="m-0 text-link">About</p>
         </span>
       </li>

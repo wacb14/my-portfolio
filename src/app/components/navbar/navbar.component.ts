@@ -1,4 +1,4 @@
-import { Component, ElementRef, HostListener, OnInit } from '@angular/core';
+import { Component, ElementRef, HostListener, Input, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
@@ -8,7 +8,7 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class NavbarComponent implements OnInit {
   menuVisible = false;
-  activeFragment = 'home';
+  @Input() activeFragment = 'home';
   constructor(
     private eRef: ElementRef,
     private activatedRoute: ActivatedRoute

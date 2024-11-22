@@ -1,7 +1,7 @@
 <div class="container-fluid p-0 m-0 background-page">
-    <app-navbar></app-navbar>
-    <app-home-page id="home"></app-home-page>
-    <app-projects-page id="projects"></app-projects-page>
-    <app-skills-page id="skills"></app-skills-page>
-    <app-about-page id="about"></app-about-page>
+    <app-navbar [activeFragment]="activeSection"></app-navbar>
+    <app-home-page id="home" class="section"></app-home-page>
+    <app-projects-page id="projects" class="section"></app-projects-page>
+    <app-skills-page id="skills" class="section"></app-skills-page>
+    <app-about-page id="about" class="section"></app-about-page>
 </div>
