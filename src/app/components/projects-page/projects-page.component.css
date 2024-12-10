@@ -81,6 +81,31 @@
   color: var(--primary-color);
   cursor: pointer;
 }
+.skill{
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  border-radius: 1rem;
+  padding: 0.3rem;
+  margin-right: 0.4rem;
+}
+.icon{
+  height: 0.8rem;
+  margin-right: 0.4rem;
+}
+#angularSkill{
+  background-color: rgba(4, 142, 255, 0.663);
+  color: white;
+}
+#bootstrapSkill{
+  background-color: #24bc9694;
+  color: white;
+}
+#jQuerySkill{
+  background-color: #ff000094;
+  color: white;
+}
 
 @keyframes spin {
   from {

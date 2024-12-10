@@ -5,7 +5,9 @@
     <h1 class="text-center w-fit my-5">Projects</h1>
   </div>
   <div class="row m-0 justify-content-center">
-    <div class="col-12 col-lg-5 p-0 px-3 card-container d-flex justify-content-center">
+    <div
+      class="col-12 col-lg-6 col-xl-5 p-0 px-3 card-container d-flex justify-content-center align-items-center"
+    >
       <div class="card">
         <img
           src="../../../assets/projects/countryguesser.png"
@@ -14,21 +16,60 @@
         />
       </div>
     </div>
-    <div class="col-12 col-md-7 col-lg-5 p-0 px-3 card-body">
-      <h2 class="card-title">Countryguesser</h2>
-      <div class="my-3">Videogame about flags, countries and maps</div>
-      <div class="my-3">
-        <a href="" class="btn-link">
-          <i class="bi bi-github" target="_blank" rel="noopener noreferrer"></i>
-          Code</a
-        ><a href="" class="btn-link">
-          <i
-            class="bi bi-link-45deg"
+    <div class="col-12 col-md-7 col-lg-6 col-xl-5 p-0 px-3 d-flex align-items-center">
+      <div class="card-body">
+        <h2 class="card-title">Countryguesser</h2>
+        <div class="my-3 d-flex">
+          <span class="skill" id="angularSkill">
+            <img
+              [src]="iconsRoute + 'c_angular.svg'"
+              alt="angular"
+              class="icon"
+            />
+            Angular
+          </span>
+          <span class="skill" id="bootstrapSkill">
+            <img
+              [src]="iconsRoute + 'c_bootstrap.svg'"
+              alt="bootstrap"
+              class="icon"
+            />
+            Bootstrap
+          </span>
+          <span class="skill" id="jQuerySkill">
+            <img
+              [src]="iconsRoute + 'c_jquery.svg'"
+              alt="jquery"
+              class="icon"
+            />
+            JQuery
+          </span>
+        </div>
+        <div class="my-3">
+          Video game about flags and maps of all the countries of the world.
+          Developed from scratch with Angular, Bootstrap, JQuery, Clickable
+          JQVmap and the API Restcountries v3.1.
+        </div>
+        <div class="my-3">
+          <a
+            href="https://github.com/wacb14/countryguesser"
+            class="btn-link"
             target="_blank"
             rel="noopener noreferrer"
-          ></i>
-          Preview</a
-        >
+          >
+            <i class="bi bi-github"></i>
+            Code</a
+          >
+          <a
+            href="https://countryguesser-effc3.web.app/"
+            class="btn-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="bi bi-link-45deg"></i>
+            Preview</a
+          >
+        </div>
       </div>
     </div>
   </div>
