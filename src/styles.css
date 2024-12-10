@@ -47,6 +47,10 @@ body {
   display: flex;
   align-items: center;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> navbar
 @media (min-width: 1400px) {
   .complete {
     height: 95vh;

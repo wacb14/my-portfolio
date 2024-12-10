@@ -1,5 +1,11 @@
-import { Component, ElementRef, HostListener, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import {
+  Component,
+  ElementRef,
+  HostListener,
+  Input,
+  OnInit,
+} from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -8,7 +14,7 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class NavbarComponent implements OnInit {
   menuVisible = false;
-  activeFragment = 'home';
+  @Input() activeFragment = 'home';
   constructor(
     private eRef: ElementRef,
     private activatedRoute: ActivatedRoute
