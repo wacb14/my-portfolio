@@ -1,12 +1,16 @@
 <div class="container p-0 complete">
   <div class="row m-0 justify-content-center">
-    <h1 class="text-center w-fit my-5">More</h1>
-    <h1 class="text-center w-fit my-5 text-primary">About</h1>
-    <h1 class="text-center w-fit my-5">Me</h1>
+    <h1 class="text-center my-5">
+      More
+      <b class="text-primary">About</b>
+      Me
+    </h1>
   </div>
   <div class="row m-0 justify-content-center">
     <div class="col col-xl-10 p-0">
-      <div class="row g-lx-4 my-auto mx-0 justify-content-center align-items-center gy-3 gy-sm-1">
+      <div
+        class="row g-lx-4 my-auto mx-0 justify-content-center align-items-center gy-3 gy-sm-1"
+      >
         <div class="col-12 col-md-9 p-0 p-sm-1 p-md-2">
           <div class="card">
             <p class="m-0 card-text">
@@ -30,92 +34,96 @@
             <p class="col-12 p-0 m-0">Experience</p>
           </div>
         </div>
-      <div class="col-6 col-sm-5 col-md-3 p-0 p-sm-1 p-md-2">
-        <div class="card">
-          <img
-            src="../../../assets/profile-photo.jpeg"
-            alt="Profile photo"
-            class="profile-photo"
-          />
+        <div class="col-6 col-sm-5 col-md-3 p-0 p-sm-1 p-md-2">
+          <div class="card">
+            <img
+              src="../../../assets/profile-photo.jpeg"
+              alt="Profile photo"
+              class="profile-photo"
+            />
+          </div>
         </div>
-      </div>
-      <div class="col-12 col-md-9 p-0 p-sm-1 p-md-2">
-        <div class="card">
-          <p class="m-0 card-text">
-            In addition, I enjoy
-            <b class="highlighted">self-taught learning</b> and exploring topics
-            such as
-            <b class="highlighted"
-              >sports, music, languages and technological innovation</b
-            >.
-          </p>
+        <div class="col-12 col-md-9 p-0 p-sm-1 p-md-2">
+          <div class="card">
+            <p class="m-0 card-text">
+              In addition, I enjoy
+              <b class="highlighted">self-taught learning</b> and exploring
+              topics such as
+              <b class="highlighted"
+                >sports, music, languages and technological innovation</b
+              >.
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="col-3 col-md-2 p-0 p-sm-1 p-md-2">
-        <div class="card icon-card">
-          <div class="icon-container text-center">
-            <img class="visible-icon icon" [src]="iconsPath + 'github.svg'" />
-            <a href="https://github.com/wacb14" target="_blank">
+        <div class="col-3 col-md-2 p-0 p-sm-1 p-md-2">
+          <div class="card icon-card">
+            <div class="icon-container text-center">
+              <img class="visible-icon icon" [src]="iconsPath + 'github.svg'" />
+              <a href="https://github.com/wacb14" target="_blank">
+                <img
+                  class="hidden-icon icon"
+                  [src]="iconsPath + 'c_github.svg'"
+                />
+              </a>
+              <h5 class="m-0 mt-3">My Repository</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 col-md-2 p-0 p-sm-1 p-md-2">
+          <div class="card icon-card">
+            <div class="icon-container text-center">
+              <img class="visible-icon icon" [src]="iconsPath + 'platzi.svg'" />
+              <a href="https://platzi.com/p/wacb14/" target="_blank">
+                <img
+                  class="hidden-icon icon"
+                  [src]="iconsPath + 'c_platzi.svg'"
+                />
+              </a>
+              <h5 class="m-0 mt-3">My Courses</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 col-md-2 p-0 p-sm-1 p-md-2">
+          <div class="card icon-card">
+            <div class="icon-container text-center">
+              <img class="visible-icon icon" [src]="iconsPath + 'duo.svg'" />
+              <a
+                href="https://www.duolingo.com/profile/WillyAldair"
+                target="_blank"
+              >
+                <img class="hidden-icon icon" [src]="iconsPath + 'c_duo.svg'" />
+              </a>
+              <h5 class="m-0 mt-3">My Languages</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 col-md-2 p-0 p-sm-1 p-md-2">
+          <div class="card icon-card">
+            <div class="icon-container text-center">
               <img
-                class="hidden-icon icon"
-                [src]="iconsPath + 'c_github.svg'"
+                class="visible-icon icon"
+                [src]="iconsPath + 'spotify.svg'"
               />
-            </a>
-            <h5 class="m-0 mt-3">My Repository</h5>
+              <a
+                href="https://open.spotify.com/user/22gb7ztmxvsmw4c2ym6oi5umy"
+                target="_blank"
+              >
+                <img
+                  class="hidden-icon icon"
+                  [src]="iconsPath + 'c_spotify.svg'"
+                />
+              </a>
+              <h5 class="m-0 mt-3">My Music</h5>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-3 col-md-2 p-0 p-sm-1 p-md-2">
-        <div class="card icon-card">
-          <div class="icon-container text-center">
-            <img class="visible-icon icon" [src]="iconsPath + 'platzi.svg'" />
-            <a href="https://platzi.com/p/wacb14/" target="_blank">
-              <img
-                class="hidden-icon icon"
-                [src]="iconsPath + 'c_platzi.svg'"
-              />
-            </a>
-            <h5 class="m-0 mt-3">My Courses</h5>
-          </div>
-        </div>
-      </div>
-      <div class="col-3 col-md-2 p-0 p-sm-1 p-md-2">
-        <div class="card icon-card">
-          <div class="icon-container text-center">
-            <img class="visible-icon icon" [src]="iconsPath + 'duo.svg'" />
-            <a
-              href="https://www.duolingo.com/profile/WillyAldair"
-              target="_blank"
-            >
-              <img class="hidden-icon icon" [src]="iconsPath + 'c_duo.svg'" />
-            </a>
-            <h5 class="m-0 mt-3">My Languages</h5>
-          </div>
-        </div>
-      </div>
-      <div class="col-3 col-md-2 p-0 p-sm-1 p-md-2">
-        <div class="card icon-card">
-          <div class="icon-container text-center">
-            <img class="visible-icon icon" [src]="iconsPath + 'spotify.svg'" />
-            <a
-              href="https://open.spotify.com/user/22gb7ztmxvsmw4c2ym6oi5umy"
-              target="_blank"
-            >
-              <img
-                class="hidden-icon icon"
-                [src]="iconsPath + 'c_spotify.svg'"
-              />
-            </a>
-            <h5 class="m-0 mt-3">My Music</h5>
-          </div>
-        </div>
-      </div>
-      <!-- <div class="col-3 col-md-2 p-0 p-sm-1 p-md-2">
+        <!-- <div class="col-3 col-md-2 p-0 p-sm-1 p-md-2">
           <div class="card icon-card"></div>
         </div>
         <div class="col-3 col-sm-2 p-0 p-sm-1 p-md-2">
           <div class="card icon-card"></div>
         </div> -->
+      </div>
     </div>
   </div>
 </div>
