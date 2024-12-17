@@ -72,26 +72,10 @@
   color: var(--primary-color);
   cursor: pointer;
 }
-.continuous-text {
-  display: inline-block;
-}
 .separator {
   color: var(--primary-color);
 }
 
-@media (max-width: 992px) {
-  .hidden-md {
-    display: none;
-  }
-}
-@media (max-width: 768px) {
-  .virtue {
-    display: block;
-  }
-  .hidden-sm {
-    display: none;
-  }
-}
 @media (max-width: 576px) {
   .photo-border,
   .profile-photo {
