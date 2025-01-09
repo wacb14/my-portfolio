@@ -69,6 +69,7 @@
 @media (max-width: 768px) {
   .navbar {
     height: 10vh;
+    display: flex;
   }
   .menu-container {
     position: fixed;
@@ -86,9 +87,13 @@
   .menu-hidden {
     display: flex;
     align-items: center;
-    justify-items: start;
+    justify-content: space-between;
+    width: 100%;
   }
   .menu-visible {
     transform: translate(0%);
+  }
+  .language-switch{
+    display: none;
   }
 }

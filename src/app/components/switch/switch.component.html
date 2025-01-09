@@ -1,0 +1,12 @@
+<div class="container">
+  <span class="element" (click)="change()" [class.active]="languages[0]"
+    ><img src="../../../assets/flags/us.svg" alt="" class="flag"></span
+  >
+  <span class="element" (click)="change()" [class.active]="languages[1]"
+    ><img src="../../../assets/flags/spain.svg" alt="" class="flag"></span
+  >
+  <span
+    class="selector"
+    [ngClass]="languages[0] == false ? 'selector-right' : ''"
+  ></span>
+</div>

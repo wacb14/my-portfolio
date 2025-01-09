@@ -3,6 +3,7 @@
     <button (click)="menu()" class="btn-menu px-3 py-1 ms-3" [class.btn-menu--active]="menuVisible">
       <i class="bi bi-list"></i>
     </button>
+    <app-switch class="language-switch-small me-3"></app-switch>
   </div>
   <div class="container text-center h-100 p-0 menu-container" [class.menu-visible]="menuVisible">
     <ul class="navbar-list row row-cols-1 row-cols-md-5 g-md-1 p-0 py-md-4 m-0">
@@ -26,6 +27,7 @@
           <p class="m-0 text-link">About</p>
         </span>
       </li>
+      <app-switch class="language-switch"></app-switch>
     </ul>
   </div>
 </nav>
