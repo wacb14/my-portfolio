@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-switch',
@@ -6,9 +7,20 @@ import { Component } from '@angular/core';
   styleUrls: ['./switch.component.css'],
 })
 export class SwitchComponent {
-  languages = [true, false];
+  english = { active: true, abbreviation: 'en' };
+  spanish = { active: false, abbreviation: 'es' };
+
+  constructor(private translateService: TranslateService) {}
+
   change() {
-    this.languages[0] = !this.languages[0];
-    this.languages[1] = !this.languages[1];
+    if (this.english.active) {
+      this.english.active = false;
+      this.spanish.active = true;
+      this.translateService.use(this.spanish.abbreviation);
+    } else {
+      this.english.active = true;
+      this.spanish.active = false;
+      this.translateService.use(this.english.abbreviation);
+    }
   }
 }

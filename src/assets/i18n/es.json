@@ -1,0 +1,54 @@
+{
+  "navbar": {
+    "home": "Inicio",
+    "projects": "Proyectos",
+    "skills": "Habilidades",
+    "about": "Sobre mí"
+  },
+  "home": {
+    "greeting": "¡Hola!",
+    "i'm": "Soy",
+    "developer": "Desarrollador Full Stack",
+    "contact": "Contáctame",
+    "teamWork": "Trabajo en equipo",
+    "problemSolving": "Resolución de problemas"
+  },
+  "projects": {
+    "latest": "Últimos",
+    "projects": "Proyectos",
+    "firstProjectDesc": "Videojuego sobre banderas y mapas de todos los países del mundo. Desarrollado desde cero con Angular, Bootstrap, JQuery, Clickable JQVmap y la API Restcountries v3.1.",
+    "code": "Código",
+    "preview": "Vista previa"
+  },
+  "skills": {
+    "my": "Mis",
+    "skills": "Habilidades"
+  },
+  "about": {
+    "more": "Más",
+    "about": "Sobre",
+    "me": "Mí",
+    "intro": {
+      "part1": "Soy un",
+      "part2": "desarrollador apasionado",
+      "part3": "con experiencia en Angular, .NET Core y bases de datos SQL y NoSQL, creando",
+      "part4": "soluciones innovadoras y eficientes",
+      "part5": ". Me considero un",
+      "part6": "profesional comprometido con la excelencia y el trabajo en equipo",
+      "part7": "para ofrecer",
+      "part8": "soluciones de alta calidad"
+    },
+    "years": "Año de",
+    "experience": "Experiencia",
+    "hobbies": {
+      "part1": "Además, disfruto del",
+      "part2": "aprendizaje autodidacta",
+      "part3": "y explorar temas como",
+      "part4": "deportes, música, idiomas e innovación tecnológica"
+    },
+    "repository": "Mi repositorio",
+    "courses": "Mis Cursos",
+    "languages": "Mis Idiomas",
+    "music": "Mi Música"
+  }
+}

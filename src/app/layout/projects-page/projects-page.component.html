@@ -1,6 +1,9 @@
 <div class="container p-0">
   <div class="row m-0 justify-content-center">
-    <h1 class="text-center my-5">My <b class="text-primary">Latest</b> Projects</h1>
+    <h1 class="text-center my-5">
+      My <b class="text-primary">{{ "projects.latest" | translate }}</b>
+      {{ "projects.projects" | translate }}
+    </h1>
   </div>
   <div class="row m-0 justify-content-center">
     <div
@@ -46,9 +49,7 @@
           </span>
         </div>
         <div class="my-3">
-          Video game about flags and maps of all the countries of the world.
-          Developed from scratch with Angular, Bootstrap, JQuery, Clickable
-          JQVmap and the API Restcountries v3.1.
+          {{ "projects.firstProjectDesc" | translate }}
         </div>
         <div class="my-3">
           <a
@@ -58,7 +59,8 @@
             rel="noopener noreferrer"
           >
             <i class="bi bi-github"></i>
-            Code</a
+            {{ "projects.code" | translate }}
+</a
           >
           <a
             href="https://countryguesser-effc3.web.app/"
@@ -67,7 +69,8 @@
             rel="noopener noreferrer"
           >
             <i class="bi bi-link-45deg"></i>
-            Preview</a
+{{ "projects.preview" | translate }}
+            </a
           >
         </div>
       </div>

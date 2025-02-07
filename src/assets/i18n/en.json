@@ -1,0 +1,54 @@
+{
+  "navbar": {
+    "home": "Home",
+    "projects": "Projects",
+    "skills": "Skills",
+    "about": "About"
+  },
+  "home": {
+    "greeting": "Hi there!",
+    "i'm": "I'm",
+    "developer": "Full Stack developer",
+    "contact": "Contact me",
+    "teamWork": "Teamwork",
+    "problemSolving": "Problem Solving"
+  },
+  "projects": {
+    "latest": "Latest",
+    "projects": "Projects",
+    "firstProjectDesc": "Video game about flags and maps of all the countries of the world. Developed from scratch with Angular, Bootstrap, JQuery, Clickable JQVmap and the API Restcountries v3.1.",
+    "code": "Code",
+    "preview": "Preview"
+  },
+  "skills": {
+    "my": "My",
+    "skills": "Skills"
+  },
+  "about": {
+    "more": "More",
+    "about": "About",
+    "me": "Me",
+    "intro": {
+      "part1": "I am a",
+      "part2": "passionate developer",
+      "part3": "with experience in Angular, .NET Core and SQL and NoSQL databases, creating",
+      "part4": "innovative and efficient solutions",
+      "part5": ". I consider myself a",
+      "part6": "professional committed to excellence and teamwork",
+      "part7": "to deliver",
+      "part8": "high quality solutions"
+    },
+    "years": "Year of",
+    "experience": "Experience",
+    "hobbies": {
+      "part1": "In addition, I enjoy",
+      "part2": "self-taught learning",
+      "part3": "and exploring topics such as",
+      "part4": "sports, music, languages and technological innovation"
+    },
+    "repository": "My repository",
+    "courses": "My Courses",
+    "languages": "My Languages",
+    "music": "My Music"
+  }
+}

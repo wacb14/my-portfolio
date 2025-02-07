@@ -1,9 +1,9 @@
 <div class="container p-0 complete pb-4">
   <div class="row m-0 justify-content-center">
     <h1 class="text-center my-5">
-      More
-      <b class="text-primary">About</b>
-      Me
+      {{ "about.more" | translate }}
+      <b class="text-primary">{{ "about.about" | translate }}</b>
+      {{ "about.me" | translate }}
     </h1>
   </div>
   <div class="row m-0 justify-content-center">
@@ -14,24 +14,23 @@
         <div class="col-12 col-md-9 p-0 p-sm-1 p-md-2">
           <div class="card">
             <p class="m-0 card-text">
-              I am a <b class="highlighted">passionate developer</b> with
-              experience in Angular, .NET Core and SQL and NoSQL databases,
-              creating
-              <b class="highlighted">innovative and efficient solutions</b>. I
-              consider myself a
-              <b class="highlighted"
-                >professional committed to excellence and teamwork</b
-              >
-              to deliver
-              <b class="highlighted">high quality solutions</b>.
+              {{ "about.intro.part1" | translate }}
+              <b class="highlighted">{{ "about.intro.part2" | translate }}</b>
+              {{ "about.intro.part3" | translate }}
+              <b class="highlighted">{{ "about.intro.part4" | translate }}</b>
+              {{ "about.intro.part5" | translate }}
+              <b class="highlighted">{{ "about.intro.part6" | translate }}</b>
+              {{ "about.intro.part7" | translate }}
+              <b class="highlighted">{{ "about.intro.part8" | translate }}</b
+              >.
             </p>
           </div>
         </div>
         <div class="col-6 col-sm-5 col-md-3 p-0 p-sm-1 p-md-2">
           <div class="card row m-0 text-center align-content-center">
             <p class="col-12 p-0 m-0 huge-text highlighted">1+</p>
-            <p class="col-12 p-0 m-0">Year of</p>
-            <p class="col-12 p-0 m-0">Experience</p>
+            <p class="col-12 p-0 m-0">{{ "about.years" | translate }}</p>
+            <p class="col-12 p-0 m-0">{{ "about.experience" | translate }}</p>
           </div>
         </div>
         <div class="col-6 col-sm-5 col-md-3 p-0 p-sm-1 p-md-2">
@@ -46,11 +45,10 @@
         <div class="col-12 col-md-9 p-0 p-sm-1 p-md-2">
           <div class="card">
             <p class="m-0 card-text">
-              In addition, I enjoy
-              <b class="highlighted">self-taught learning</b> and exploring
-              topics such as
-              <b class="highlighted"
-                >sports, music, languages and technological innovation</b
+              {{ "about.hobbies.part1" | translate }}
+              <b class="highlighted">{{ "about.hobbies.part2" | translate }}</b>
+              {{ "about.hobbies.part3" | translate }}
+              <b class="highlighted">{{ "about.hobbies.part4" | translate }}</b
               >.
             </p>
           </div>
@@ -65,7 +63,7 @@
                   [src]="iconsPath + 'c_github.svg'"
                 />
               </a>
-              <h5 class="m-0 mt-3">My Repository</h5>
+              <h5 class="m-0 mt-3">{{ "about.repository" | translate }}</h5>
             </div>
           </div>
         </div>
@@ -79,7 +77,7 @@
                   [src]="iconsPath + 'c_platzi.svg'"
                 />
               </a>
-              <h5 class="m-0 mt-3">My Courses</h5>
+              <h5 class="m-0 mt-3">{{ "about.courses" | translate }}</h5>
             </div>
           </div>
         </div>
@@ -93,7 +91,9 @@
               >
                 <img class="hidden-icon icon" [src]="iconsPath + 'c_duo.svg'" />
               </a>
-              <h5 class="m-0 mt-3">My Languages</h5>
+              <h5 class="m-0 mt-3">
+                {{ "about.languages" | translate }}
+              </h5>
             </div>
           </div>
         </div>
@@ -113,7 +113,7 @@
                   [src]="iconsPath + 'c_spotify.svg'"
                 />
               </a>
-              <h5 class="m-0 mt-3">My Music</h5>
+              <h5 class="m-0 mt-3">{{ "about.music" | translate }}</h5>
             </div>
           </div>
         </div>

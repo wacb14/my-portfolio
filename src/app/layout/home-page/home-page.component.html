@@ -15,9 +15,11 @@
       <div class="col-12 col-xl-7 my-1 my-sm-2 my-md-3 my-xl-5 px-0">
         <div class="row text-center m-0">
           <div class="col-12 p-0">
-            <h1>Hi there!</h1>
-            <h1 class="text-primary">I'm Aldair Cruz Béjar</h1>
-            <h2>Full Stack developer</h2>
+            <h1>{{ "home.greeting" | translate }}</h1>
+            <h1 class="text-primary">
+              {{ "home.i'm" | translate }} Aldair Cruz Béjar
+            </h1>
+            <h2>{{ "home.developer" | translate }}</h2>
           </div>
           <div class="col-12 p-0">
             <div class="row justify-content-center m-0 mt-sm-2 mt-md-3 mt-xl-4">
@@ -27,7 +29,8 @@
                   class="btn-link mb-2 mb-md-0"
                   target="_blank"
                   rel="noopener noreferrer"
-                  ><i class="bi bi-envelope-at"></i> Contact me</a
+                  ><i class="bi bi-envelope-at"></i>
+                  {{ "home.contact" | translate }}</a
                 >
               </div>
               <div class="col-12 col-md-5 col-lg-4 col-xl-5 p-0">
@@ -47,8 +50,8 @@
     <div class="w-100 h-fit m-0 my-1 my-sm-2 my-md-3 my-xl-4 text-center">
       <h3 class="m-0 mt-3">
         Angular Frontend <b class="separator">|</b> .NET Backend
-        <b class="separator">|</b> Teamwork
-        <b class="separator">|</b> Problem Solving
+        <b class="separator">|</b> {{ "home.teamWork" | translate }}
+        <b class="separator">|</b> {{ "home.problemSolving" | translate }}
       </h3>
     </div>
   </div>

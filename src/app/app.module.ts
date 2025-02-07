@@ -9,6 +9,9 @@ import { AboutPageComponent } from './layout/about-page/about-page.component';
 import { SkillsPageComponent } from './layout/skills-page/skills-page.component';
 import { ProjectsPageComponent } from './layout/projects-page/projects-page.component';
 import { SwitchComponent } from './components/switch/switch.component';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -21,7 +24,21 @@ import { SwitchComponent } from './components/switch/switch.component';
     ProjectsPageComponent,
     SwitchComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule,
+    TranslateModule.forRoot(),
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: (http: HttpClient) => {
+          return new TranslateHttpLoader(http);
+        },
+        deps: [HttpClient],
+      },
+    }),
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
