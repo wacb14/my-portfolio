@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
     styleUrls: ['./about-page.component.css'],
 })
 export class AboutPageComponent {
-    iconsPath = '../../../assets/icons/';
+    iconsPath = 'assets/icons/';
 }

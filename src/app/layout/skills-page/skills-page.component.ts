@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./skills-page.component.css'],
 })
 export class SkillsPageComponent {
-  iconsPath = '../../../assets/icons/';
+  iconsPath = 'assets/icons/';
   frontend = [
     { file: 'html.svg', title: 'HTML' },
     { file: 'css.svg', title: 'CSS' },

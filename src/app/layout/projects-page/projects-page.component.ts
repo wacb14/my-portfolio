@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./projects-page.component.css'],
 })
 export class ProjectsPageComponent {
-  iconsRoute = '../../../assets/icons/';
+  iconsRoute = 'assets/icons/';
 }
