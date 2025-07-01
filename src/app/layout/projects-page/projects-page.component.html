@@ -11,6 +11,65 @@
     >
       <div class="card">
         <img
+          src="assets/projects/macro_tracker.png"
+          alt="project demo"
+          class="card-image"
+        />
+      </div>
+    </div>
+    <div
+      class="col-12 col-md-7 col-lg-6 col-xl-5 p-0 px-3 d-flex align-items-center"
+    >
+      <div class="card-body">
+        <h2 class="card-title">Macro Tracker</h2>
+        <div class="my-3 d-flex">
+          <span class="skill" id="angularSkill">
+            <img
+              [src]="iconsRoute + 'c_angular.svg'"
+              alt="angular"
+              class="icon"
+            />
+            Angular
+          </span>
+          <span class="skill" id="tailwindSkill">
+            <img
+              [src]="iconsRoute + 'c_tailwind.svg'"
+              alt="tailwind"
+              class="icon"
+            />
+            Tailwind
+          </span>
+        </div>
+        <div class="my-3">
+          {{ "projects.secondProjectDesc" | translate }}
+        </div>
+        <div class="my-3">
+          <a
+            href="https://github.com/wacb14/macro-tracker"
+            class="btn-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="bi bi-github"></i>
+            {{ "projects.code" | translate }}
+          </a>
+          <a
+            href="https://macrotracker-dc895.web.app/"
+            class="btn-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="bi bi-link-45deg"></i>
+            {{ "projects.preview" | translate }}
+          </a>
+        </div>
+      </div>
+    </div>
+    <div
+      class="col-12 col-lg-6 col-xl-5 p-0 px-3 card-container d-flex justify-content-center align-items-center"
+    >
+      <div class="card">
+        <img
           src="assets/projects/countryguesser.png"
           alt="project demo"
           class="card-image"
@@ -47,6 +106,14 @@
             />
             JQuery
           </span>
+          <span class="skill" id="firebaseSkill">
+            <img
+              [src]="iconsRoute + 'c_firebase.svg'"
+              alt="firebase"
+              class="icon"
+            />
+            Firebase
+          </span>
         </div>
         <div class="my-3">
           {{ "projects.firstProjectDesc" | translate }}
@@ -60,8 +127,7 @@
           >
             <i class="bi bi-github"></i>
             {{ "projects.code" | translate }}
-</a
-          >
+          </a>
           <a
             href="https://countryguesser-effc3.web.app/"
             class="btn-link"
@@ -69,9 +135,8 @@
             rel="noopener noreferrer"
           >
             <i class="bi bi-link-45deg"></i>
-{{ "projects.preview" | translate }}
-            </a
-          >
+            {{ "projects.preview" | translate }}
+          </a>
         </div>
       </div>
     </div>

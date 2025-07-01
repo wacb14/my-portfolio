@@ -17,6 +17,7 @@
     "latest": "Últimos",
     "projects": "Proyectos",
     "firstProjectDesc": "Videojuego sobre banderas y mapas de todos los países del mundo. Desarrollado desde cero con Angular, Bootstrap, JQuery, Clickable JQVmap y la API Restcountries v3.1.",
+    "secondProjectDesc": "Aplicación de fitness para el seguimiento del consumo de alimentos. App frontend desarrollada desde cero con Angular y Tailwind.",
     "code": "Código",
     "preview": "Vista previa"
   },

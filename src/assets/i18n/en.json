@@ -17,6 +17,7 @@
     "latest": "Latest",
     "projects": "Projects",
     "firstProjectDesc": "Video game about flags and maps of all the countries of the world. Developed from scratch with Angular, Bootstrap, JQuery, Clickable JQVmap and the API Restcountries v3.1.",
+    "secondProjectDesc": "Fitness app to track food consumption. Frontend app developed from scratch with Angular and Tailwind.",
     "code": "Code",
     "preview": "Preview"
   },

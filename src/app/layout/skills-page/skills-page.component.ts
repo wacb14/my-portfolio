@@ -13,6 +13,8 @@ export class SkillsPageComponent {
     { file: 'js.svg', title: 'JavaScript' },
     { file: 'ts.svg', title: 'TypeScript' },
     { file: 'angular.svg', title: 'Angular' },
+    { file: 'bootstrap.svg', title: 'Bootstrap' },
+    { file: 'tailwind.svg', title: 'Tailwind' },
   ];
   backend = [
     { file: 'csharp.svg', title: 'C#' },
@@ -21,6 +23,7 @@ export class SkillsPageComponent {
     { file: 'mysql.svg', title: '.MySQL' },
     { file: 'sqlserver.svg', title: 'SQL Server' },
     { file: 'mongodb.svg', title: 'MongoDB' },
+    { file: 'firebase.svg', title: 'Firebase' },
   ];
   others = [
     { file: 'linux.svg', title: 'Linux' },
